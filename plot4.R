@@ -32,7 +32,7 @@ x$Date <- as.Date(x$Date, "%d/%m/%Y") #Change date string to a Date type
 ##################
 ## Create Plot 4 #
 ##################
-png("plot4.png", width = 480, height = 480, units = "px")
+png("plot4.png", bg = "transparent", width = 480, height = 480, units = "px")
 par(mfrow = c(2,2), cex.lab = 1)
 plot(x$DateAndTime, x$Global_active_power, col = "black",
      type = "l", ylab = "Global Active Power",
