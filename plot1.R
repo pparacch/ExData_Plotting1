@@ -32,7 +32,7 @@ x$Date <- as.Date(x$Date, "%d/%m/%Y") #Change date string to a Date type
 ##################
 ## Create Plot 1 #
 ##################
-png("plot1.png", width = 480, height = 480, units = "px")
+png("plot1.png", bg = "transparent", width = 480, height = 480, units = "px")
 hist(x$Global_active_power, col = "red", main = "Global Active Power", 
      xlab = "Global Active Power (kilowatts)",
      breaks = 11)
