@@ -33,7 +33,7 @@ x$Date <- as.Date(x$Date, "%d/%m/%Y") #Change date string to a Date type
 ##################
 ## Create Plot 2 #
 ##################
-png("plot2.png", width = 480, height = 480, units = "px")
+png("plot2.png", bg = "transparent", width = 480, height = 480, units = "px")
 plot(x$DateAndTime, x$Global_active_power, col = "black",
      type = "l", ylab = "Global Active Power (kilowatts)",
      xlab = "")
