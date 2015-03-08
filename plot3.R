@@ -32,7 +32,7 @@ x$Date <- as.Date(x$Date, "%d/%m/%Y") #Change date string to a Date type
 ##################
 ## Create Plot 3 #
 ##################
-png("plot3.png", width = 480, height = 480, units = "px")
+png("plot3.png", bg = "transparent", width = 480, height = 480, units = "px")
 plot(x$DateAndTime, x$Sub_metering_1, col = "black",
      type = "l", ylab = "Energy sub metering",
      xlab = "")
